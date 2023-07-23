@@ -16,8 +16,8 @@ const App = () => {
         </div>
         <div className="list">
           {
-            data.map(movie =>
-              <MovieCard movie={movie}/>
+            data.map((movie,id) =>
+              <MovieCard movie={movie} key={id}/>
             )
           }
         </div>
